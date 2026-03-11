@@ -1,65 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Northwest Property Compliance</title>
 
 <style>
 
-body{
-font-family:Arial;
+*{
 margin:0;
-background:#f4f6f9;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f7fb;
 color:#333;
 }
 
-header{
-background:#1e2a44;
-color:white;
-text-align:center;
-padding:60px 20px;
-}
-
-header h1{
-margin:0;
-font-size:42px;
-}
-
-header p{
-font-size:20px;
-opacity:0.9;
-}
-
-.container{
-max-width:1100px;
-margin:auto;
-padding:60px 20px;
-}
-
-.services{
+nav{
+background:#1f2d4a;
+padding:15px 40px;
 display:flex;
-flex-wrap:wrap;
-gap:30px;
-}
-
-.card{
-background:white;
-padding:30px;
-flex:1;
-min-width:260px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-}
-
-.card h3{
-margin-top:0;
-}
-
-.contact{
-background:#1e2a44;
+justify-content:space-between;
+align-items:center;
 color:white;
+}
+
+nav h2{
+font-weight:600;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:15px;
+}
+
+.hero{
+background:#1f2d4a;
+color:white;
+padding:100px 20px;
 text-align:center;
-padding:60px 20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
 }
 
 button{
@@ -67,68 +64,152 @@ background:#2bb6a3;
 border:none;
 padding:15px 30px;
 color:white;
-font-size:18px;
+font-size:16px;
 border-radius:6px;
 cursor:pointer;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:80px 20px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.about{
+background:white;
+}
+
+.contact{
+background:#1f2d4a;
+color:white;
+text-align:center;
+padding:80px 20px;
 }
 
 footer{
 text-align:center;
 padding:20px;
 background:#e9edf2;
+font-size:14px;
 }
 
 </style>
 
 </head>
 
+
 <body>
 
-<header>
+<nav>
+
+<h2>Northwest Property Compliance</h2>
+
+<div>
+
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+
+<section class="hero">
 
 <h1>Northwest Property Compliance</h1>
 
 <p>Inventories • Inspections • Compliance Checks</p>
 
-</header>
+<button>Request a Quote</button>
 
-<div class="container">
+</section>
+
+
+<section class="container" id="services">
 
 <h2>Our Services</h2>
 
 <div class="services">
 
 <div class="card">
+
 <h3>Property Inventories</h3>
-<p>Detailed inventory reports for landlords and letting agents to protect property assets.</p>
+
+<p>Detailed inventory reports protecting landlords and letting agents by documenting property condition.</p>
+
 </div>
 
 <div class="card">
+
 <h3>Property Inspections</h3>
-<p>Routine property inspections ensuring properties remain compliant and well maintained.</p>
+
+<p>Routine inspections ensuring properties are well maintained and compliant with regulations.</p>
+
 </div>
 
 <div class="card">
+
 <h3>Compliance Checks</h3>
-<p>Helping landlords meet legal safety requirements and compliance obligations.</p>
-</div>
+
+<p>Helping landlords stay compliant with property safety legislation and legal obligations.</p>
 
 </div>
 
 </div>
 
-<div class="contact">
+</section>
+
+
+<section class="container about" id="about">
+
+<h2>About Us</h2>
+
+<p>
+
+Northwest Property Compliance provides professional property inventory,
+inspection and compliance services across the North West.
+
+We work with landlords, letting agents and property managers to ensure
+properties meet legal requirements and are professionally documented.
+
+</p>
+
+</section>
+
+
+<section class="contact" id="contact">
 
 <h2>Get in Touch</h2>
 
 <p>Email: info@northwestpropertycompliance.co.uk</p>
+
 <p>Phone: 07464 445873</p>
 
 <br>
 
-<button>Request a Quote</button>
+<button>Email Us</button>
 
-</div>
+</section>
+
 
 <footer>
 
@@ -136,5 +217,7 @@ background:#e9edf2;
 
 </footer>
 
+
 </body>
+
 </html>
